@@ -22,3 +22,4 @@
   * [The Job Class](building-jobs/the-job-class.md)
   * [Job Options](building-jobs/job-options.md)
   * [Before, After, On Success and On Failure](building-jobs/actions.md)
+  * [Loading Additional Code](building-jobs/loading-additional-code.md)
