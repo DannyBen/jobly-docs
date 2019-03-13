@@ -19,3 +19,7 @@
   * [Slack Notifications](examples/slack-notifications/README.md)
   * [Syslog](examples/syslog/README.md)
   * [Worker Config](examples/worker-config/README.md)
+* [Building Jobs](building-jobs/README.md)
+  * [The Job Class](building-jobs/the-job-class.md)
+  * [Job Options](building-jobs/job-options.md)
+  * [Before, After, On Success and On Failure](building-jobs/actions.md)
