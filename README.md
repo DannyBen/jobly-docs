@@ -1,7 +1,7 @@
 # What is Jobly
 
-Jobly is a command line utility that wraps several compol around the sidekiq
-backgronud jobs system. 
+Jobly is a sidekiq-based job server with a command line interface, web API
+and a web dashboard dashboard.
 
 ![](.gitbook/assets/terminal.gif)
 

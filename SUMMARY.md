@@ -1,8 +1,13 @@
 # Table of contents
 
 * [What is Jobly](README.md)
-* [Getting Started](getting-started/README.md)
-  * [Install](getting-started/install.md)
+* Getting Started
+  * [Installation](getting-started/installation.md)
+* Usage
+  * [Server](usage/server.md)
+  * [Worker](usage/worker.md)
+  * [Running jobs from the command line](usage/run-with-cli.md)
+  * [Running jobs through the API](usage/run-with-api.md)
 * [Examples](examples/README.md)
   * [Basic Example](examples/basic/README.md)
   * [Complete Example](examples/complete/README.md)
