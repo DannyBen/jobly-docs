@@ -6,8 +6,8 @@
 * Usage
   * [Server](usage/server.md)
   * [Worker](usage/worker.md)
-  * [Running jobs from the command line](usage/running-with-cli.md)
-  * [Running jobs through the API](usage/running-with-api.md)
+  * [Running jobs with the CLI](usage/running-with-cli.md)
+  * [Running jobs with the API](usage/running-with-api.md)
 * [Examples](examples/README.md)
   * [Basic Example](examples/basic/README.md)
   * [Complete Example](examples/complete/README.md)
