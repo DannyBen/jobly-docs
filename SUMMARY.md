@@ -1,8 +1,7 @@
 # Table of contents
 
 * [What is Jobly](README.md)
-* Getting Started
-  * [Installation](getting-started/installation.md)
+* [Installation](getting-started/installation.md)
 * Usage
   * [Server](usage/server.md)
   * [Worker](usage/worker.md)
