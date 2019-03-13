@@ -1,7 +1,9 @@
 # What is Jobly
 
 ![](.gitbook/assets/terminal.gif)
+
 ![](.gitbook/assets/screen.gif)
+
 
 ## What's in the Box
 
