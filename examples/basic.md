@@ -8,8 +8,6 @@
 
 ## Code
 
-### jobs/hello.rb
-
 {% code-tabs %}
 {% code-tabs-item title="jobs/hello.rb" %}
 ```ruby
@@ -19,12 +17,6 @@ class Hello < Jobly::Job
     logger.info "said hello to #{name}"
   end
 end
-```
-{% endcode-tabs-item %}
-
-{% code-tabs-item title=undefined %}
-```
-Test
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
