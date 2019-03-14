@@ -7,7 +7,7 @@
     * [Dashboard and API Server](usage/server-side/server.md)
     * [Worker](usage/server-side/worker.md)
   * [Client Side](usage/client-side/README.md)
-    * [Running jobs with the CLI](usage/client-side/running-with-cli.md)
+    * [Running jobs with the CLI](usage/client-side/running-jobs-with-the-cli.md)
     * [Running jobs with the API](usage/client-side/running-jobs-with-the-api.md)
 * [Examples](examples/README.md)
   * [Basic Example](examples/basic.md)

@@ -12,7 +12,7 @@ http://localhost:3000/do/JobName
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Execute a job. 
+Execute a job.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -36,7 +36,7 @@ Any parameter required by the job
 Job received and sent to queue.
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "status":"received",
   "job":"Build",
@@ -52,14 +52,13 @@ Job received and sent to queue.
 Job cannot be found.
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "status": "error",
   "message": "No such job",
   "job": "BuildAndRun",
   "params": {}
 }
-
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -96,7 +95,7 @@ Any parameter required by the job
 Job received and sent to queue.
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "status":"received",
   "job":"Build",
@@ -112,16 +111,16 @@ Job received and sent to queue.
 Job cannot be found.
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
   "status": "error",
   "message": "No such job",
   "job": "BuildAndRun",
   "params": {}
 }
-
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
