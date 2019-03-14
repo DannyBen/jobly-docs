@@ -27,5 +27,6 @@
   * [Solo Jobs](building-jobs/solo-jobs.md)
   * [Loading Additional Code](building-jobs/loading-additional-code.md)
 * [Configuration](configuration/README.md)
+  * [Jobly Configuraion](configuration/jobly-configuraion.md)
   * [Worker Configuration](configuration/worker-config.md)
 
