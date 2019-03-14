@@ -17,8 +17,8 @@ This example illustrates these aspects of Jobly:
 
 ## Code
 
-### jobs/build.rb
-
+{% code-tabs %}
+{% code-tabs-item title="jobs/build.rb" %}
 ```ruby
 class Build < Job
   def execute(app: 'server', deploy: 'yes')
@@ -45,9 +45,9 @@ class Build < Job
   end
 end
 ```
+{% endcode-tabs-item %}
 
-### config/jobly.rb
-
+{% code-tabs-item title="config/jobly.rb" %}
 ```ruby
 Jobly.configure do |config|
   # Full configuration file. Everything is optional and has defaults.
@@ -109,9 +109,9 @@ Jobly.configure do |config|
 
 end
 ```
+{% endcode-tabs-item %}
 
-### app/job.rb
-
+{% code-tabs-item title="app/job.rb" %}
 ```ruby
 require 'tty-command'
 
@@ -123,6 +123,8 @@ class Job < Jobly::Job
   end
 end
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## Commands to Try
 
