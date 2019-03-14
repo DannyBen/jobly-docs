@@ -1,11 +1,8 @@
-How to use this example
-==================================================
+# Basic Example
 
-[Download the examples folder](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/DannyBen/jobly/tree/master/examples)
-and follow the steps below.
+[Download the examples folder](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/DannyBen/jobly/tree/master/examples) and follow the steps below.
 
-
-```shell
+```text
 cd examples/01-minimal
 
 # Run the job locally and immediately
@@ -26,3 +23,4 @@ jobly send Hello
 # Schedule a job by accessing the API:
 open http://localhost:3000/do/Hello?name=Guest
 ```
+

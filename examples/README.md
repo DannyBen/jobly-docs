@@ -1,11 +1,8 @@
-Examples
-==================================================
+# Examples
 
-You can 
-[download the examples folder](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/DannyBen/jobly/tree/master/examples)
+{% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
 
-Each folder contains annotated example files and a README with further 
-explanations or commands to try out.
+Each folder contains annotated example files and a README with further explanations or commands to try out.
 
-It is recommended that you view the [01-minimal](01-minimal) and 
-[02-full](02-full) examples first, before continuing to the topical examples.
+It is recommended that you view the [01-minimal](https://github.com/DannyBen/jobly-docs/tree/5ff4d0bada505a692c2130172e3d0999a55d4bbe/examples/01-minimal/README.md) and [02-full](https://github.com/DannyBen/jobly-docs/tree/5ff4d0bada505a692c2130172e3d0999a55d4bbe/examples/02-full/README.md) examples first, before continuing to the topical examples.
+
