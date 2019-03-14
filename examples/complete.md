@@ -4,16 +4,12 @@
 
 This example illustrates these aspects of Jobly:
 
-1. How to use foreman to start both the server and the worker together in
-   development environment - see the Procfile.
+1. How to use foreman to start both the server and the worker together in development environment - see the Procfile.
 2. How to configure Jobly - see the config folder.
 3. How to add additional code that is preloaded - see the app folder.
-4. How to create your own Job parent class to provide common functionality
-   to your jobs.
-5. How to execute shell commands from a Job and send the output directly
-   to the logger.
+4. How to create your own Job parent class to provide common functionality to your jobs.
+5. How to execute shell commands from a Job and send the output directly to the logger.
 6. How to send all output to a file log instead of STDOUT.
-
 
 ## Commands to Try
 
