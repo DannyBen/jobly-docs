@@ -10,17 +10,17 @@ This example demonstrates how to use Jobly inside a docker container and with do
 
 ## Code
 
-### Dockerfile
-
+{% code-tabs %}
+{% code-tabs-item title="Dockerfile" %}
 ```text
 FROM dannyben/alpine-ruby
 RUN gem install jobly
 WORKDIR /app
 COPY app .
 ```
+{% endcode-tabs-item %}
 
-### docker-compose.yml
-
+{% code-tabs-item title="docker-compose.yml" %}
 ```yaml
 version: '3'
 
@@ -53,6 +53,9 @@ services:
     entrypoint: jobly send
     command: Hello
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 
 ## Commands to Try
 

@@ -15,16 +15,16 @@ It illustrates:
 
 ## Code
 
-### config/jobly.rb
-
+{% code-tabs %}
+{% code-tabs-item title="config/jobly.rb" %}
 ```ruby
 Jobly.configure do |config|
   config.jobs_namespace = 'Jobs'
 end
 ```
+{% endcode-tabs-item %}
 
-### jobs/hello.rb
-
+{% code-tabs-item title="jobs/hello.rb" %}
 ```ruby
 # Global namespace for all jobs
 module Jobs
@@ -36,9 +36,9 @@ module Jobs
   end
 end
 ```
+{% endcode-tabs-item %}
 
-### jobs/inner/hi.rb
-
+{% code-tabs-item title="jobs/inner/hi.rb" %}
 ```ruby
 module Jobs
   # A nested job, can be executed with Inner::Hi or Inner/Hi
@@ -52,6 +52,8 @@ module Jobs
   end
 end
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## Commands to Try
 

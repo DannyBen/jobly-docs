@@ -12,8 +12,8 @@ Note that the same can also be achieved through the command line, without using 
 
 ## Code
 
-### config/worker.yml
-
+{% code-tabs %}
+{% code-tabs-item title="config/worker.yml" %}
 ```yaml
 :concurrency: 2
 :queues:
@@ -21,9 +21,9 @@ Note that the same can also be achieved through the command line, without using 
 - default
 - mundane
 ```
+{% endcode-tabs-item %}
 
-### jobs/critical.rb
-
+{% code-tabs-item title="jobs/critical.rb" %}
 ```ruby
 class Critical < Jobly::Job
   options queue: 'critical'
@@ -33,9 +33,9 @@ class Critical < Jobly::Job
   end
 end
 ```
+{% endcode-tabs-item %}
 
-### jobs/mundane.rb
-
+{% code-tabs-item title="jobs/mundane.rb" %}
 ```ruby
 class Mundane < Jobly::Job
   options queue: 'mundane'
@@ -45,13 +45,16 @@ class Mundane < Jobly::Job
   end
 end
 ```
+{% endcode-tabs-item %}
 
-### Procfile
-
+{% code-tabs-item title="Procfile" %}
 ```text
 web: jobly server
 worker: jobly worker --config worker
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 
 ## Commands to Try
 

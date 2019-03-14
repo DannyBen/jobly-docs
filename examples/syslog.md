@@ -10,8 +10,8 @@ This example illustrates how to configure Jobly to send all logger events to a l
 
 ## Code
 
-### config/jobly.rb
-
+{% code-tabs %}
+{% code-tabs-item title="config/jobly.rb" %}
 ```ruby
 require 'remote_syslog_logger'
 
@@ -30,9 +30,9 @@ Jobly.configure do |config|
 
 end
 ```
+{% endcode-tabs-item %}
 
-### jobs/hello.rb
-
+{% code-tabs-item title="jobs/hello.rb" %}
 ```ruby
 class Hello < Jobly::Job
   def execute(name: 'bob')
@@ -41,6 +41,9 @@ class Hello < Jobly::Job
   end
 end
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 
 ## Commands to Try
 
