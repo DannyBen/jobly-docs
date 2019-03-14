@@ -1,11 +1,67 @@
 # Before and After Actions
 
-[Download the examples folder](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/DannyBen/jobly/tree/master/examples) and follow the steps below.
+{% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
+
+{% hint style="info" %}
+[View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/before-after-actions)
+{% endhint %}
+
 
 This example illustrates the use of `before`, `after`, `on_skip`, `on_success`, and `on_failure` blocks.
 
-```text
-cd examples/before-after-actions
+## Code
+
+### jobs/actions.rb
+
+```ruby
+class Actions < Jobly::Job
+  before { puts "before" }
+  after  { puts "after" }
+
+  on_success { puts "on_success" }
+  on_failure { puts "on_failure" }
+
+  after :after_party
+
+  def execute(fail: false)
+    puts "execute 1/2"
+    raise "RAISED" if fail
+    puts "execute 2/2"
+  end
+
+  def after_party
+    puts "after_party"
+  end
+end
+```
+
+### jobs/filter.rb
+
+```ruby
+class Filter < Jobly::Job
+  before do
+    puts "before"
+    skip_job
+  end
+
+  after do
+    puts "after"
+  end
+
+  on_skip    { puts "on_skip" }
+  on_success { puts "on_success" }
+  on_failure { puts "on_failure" }
+
+  def execute
+    puts "execute"
+  end
+end
+```
+
+## Commands to Try
+
+```shell
+cd examples/files/before-after-actions
 
 # Run the job in its successful form
 jobly run Actions

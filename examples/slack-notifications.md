@@ -1,11 +1,54 @@
 # Slack Notifications
 
-[Download the examples folder](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/DannyBen/jobly/tree/master/examples) and follow the steps below.
+{% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
+
+{% hint style="info" %}
+[View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/slack-notifications)
+{% endhint %}
+
 
 This example illustrates how to send slack notifications from your jobs.
 
-```text
-cd examples/slack-notifications
+## Code
+
+### app/job.rb
+
+```ruby
+require 'slack-notifier'
+
+class Job < Jobly::Job
+  def slack
+    @slack ||= slack!
+  end
+
+  def slack!
+    Slack::Notifier.new webhook, channel: "#general", username: "Bot"
+  end
+
+  def webhook
+    ENV['SLACK_WEBHOOK']
+  end
+end
+```
+
+### jobs/hello.rb
+
+```ruby
+class Greet < Job
+  def execute(name: 'bob')
+    # Quick message
+    slack.ping "Hello #{name}"
+
+    # Message with attachment
+    slack.post attachments: { text: "Good text", color: "good" }
+  end
+end
+```
+
+## Commands to Try
+
+```shell
+cd examples/files/slack-notifications
 
 # Install additional gem dependencies
 bundle install

@@ -1,5 +1,3 @@
-require 'remote_syslog_logger'
-
 Jobly.configure do |config|
   # Full configuration file. Everything is optional and has defaults.
   # This file is loaded on boot of the server, worker and jobly CLI.
