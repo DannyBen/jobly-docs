@@ -35,7 +35,6 @@ end
 ```
 {% endcode-tabs-item %}
 
-
 {% code-tabs-item title="jobs/filter.rb" %}
 ```ruby
 class Filter < Jobly::Job
@@ -59,7 +58,6 @@ end
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
-
 
 ## Commands to Try
 

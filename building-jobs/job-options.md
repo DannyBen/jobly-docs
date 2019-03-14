@@ -1,6 +1,6 @@
 # Job Options
 
-The `Jobly::Job` class supports these options:
+The `Jobly::Job` class supports these class-level options:
 
 | Key | Default | Purpose |
 | :--- | :--- | :--- |

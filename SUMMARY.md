@@ -21,7 +21,7 @@
 * [Building Jobs](building-jobs/README.md)
   * [The Job Class](building-jobs/the-job-class.md)
   * [Job Options](building-jobs/job-options.md)
-  * [Before, After, On Success and On Failure](building-jobs/actions.md)
+  * [Job Callbacks](building-jobs/callbacks.md)
   * [Loading Additional Code](building-jobs/loading-additional-code.md)
 * [Configuration](configuration/README.md)
   * [Worker Configuration](configuration/worker-config.md)

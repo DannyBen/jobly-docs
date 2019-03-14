@@ -1,4 +1,4 @@
-# Before, After, On Success and On Failure
+# Job Callbacks
 
 The `Jobly::Job` class supports these callback methods:
 
