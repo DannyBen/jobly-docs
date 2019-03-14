@@ -6,7 +6,6 @@
 [View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/options-and-errors)
 {% endhint %}
 
-
 This example illustrates setting the job options: `backtrace`, `queue` and `retries`.
 
 ## Code
@@ -33,7 +32,7 @@ end
 
 ## Commands to Try
 
-```shell
+```text
 cd examples/files/options-and-errors
 
 # Start the server and the worker

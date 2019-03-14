@@ -6,14 +6,13 @@
 [View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/docker-compose)
 {% endhint %}
 
-
 This example demonstrates how to use Jobly inside a docker container and with docker compose.
 
 ## Code
 
 ### Dockerfile
 
-```dockerfile
+```text
 FROM dannyben/alpine-ruby
 RUN gem install jobly
 WORKDIR /app
@@ -57,7 +56,7 @@ services:
 
 ## Commands to Try
 
-```shell
+```text
 cd examples/files/docker-compose
 
 # Build the images

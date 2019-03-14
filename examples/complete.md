@@ -6,7 +6,6 @@
 [View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/complete)
 {% endhint %}
 
-
 This example illustrates these aspects of Jobly:
 
 1. How to use foreman to start both the server and the worker together in development environment - see the Procfile.
@@ -32,7 +31,7 @@ class Build < Job
 
     # Simulate a long running command with output to the logger.
     shell.run 'ls -la ; sleep 10'
-    
+
     # Simulate some more long running commands
     if deploy == 'yes'
       at 1, "Deploying"
@@ -127,7 +126,7 @@ end
 
 ## Commands to Try
 
-```shell
+```text
 cd examples/files/complete
 
 # Install additional gem dependencies

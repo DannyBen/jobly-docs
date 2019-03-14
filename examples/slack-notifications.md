@@ -6,7 +6,6 @@
 [View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/slack-notifications)
 {% endhint %}
 
-
 This example illustrates how to send slack notifications from your jobs.
 
 ## Code
@@ -47,7 +46,7 @@ end
 
 ## Commands to Try
 
-```shell
+```text
 cd examples/files/slack-notifications
 
 # Install additional gem dependencies

@@ -6,7 +6,6 @@
 [View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/before-after-actions)
 {% endhint %}
 
-
 This example illustrates the use of `before`, `after`, `on_skip`, `on_success`, and `on_failure` blocks.
 
 ## Code
@@ -60,7 +59,7 @@ end
 
 ## Commands to Try
 
-```shell
+```text
 cd examples/files/before-after-actions
 
 # Run the job in its successful form

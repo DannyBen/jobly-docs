@@ -6,7 +6,6 @@
 [View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/syslog)
 {% endhint %}
 
-
 This example illustrates how to configure Jobly to send all logger events to a local or remote syslog.
 
 ## Code
@@ -45,7 +44,7 @@ end
 
 ## Commands to Try
 
-```shell
+```text
 cd examples/files/syslog
 
 # Install additional gem dependencies

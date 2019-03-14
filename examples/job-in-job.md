@@ -6,7 +6,6 @@
 [View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/job-in-job)
 {% endhint %}
 
-
 This example demonstrates how to call a job from inside another job.
 
 Two approaches are possible:
@@ -14,10 +13,9 @@ Two approaches are possible:
 1. Executing secondary jobs synchronously, as part of the parent job.
 2. Spawning the secondary jobs to be executed later by the worker, as separate jobs.
 
-
 ## Code
 
-### jobs/run_sync.rb
+### jobs/run\_sync.rb
 
 ```ruby
 # This job will call the other jobs synchronously and display progress
@@ -38,7 +36,7 @@ class RunSync < Jobly::Job
 end
 ```
 
-### jobs/run_async.rb
+### jobs/run\_async.rb
 
 ```ruby
 # This job will spawn child threads for the sub jobs.
@@ -53,7 +51,7 @@ class RunAsync < Jobly::Job
 end
 ```
 
-### jobs/sub_job.rb
+### jobs/sub\_job.rb
 
 ```ruby
 class SubJob < Jobly::Job
@@ -66,7 +64,7 @@ end
 
 ## Commands to Try
 
-```shell
+```text
 cd examples/files/job-in-job
 
 # Start the server and worker

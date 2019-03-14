@@ -6,13 +6,12 @@
 [View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/namespaces)
 {% endhint %}
 
-
 This example illustrates how to define jobs that are namespaced in modules.
 
 It illustrates:
 
 1. How all jobs can be nested inside a specific module that is used as the default namespace for all jobs - see the config folder.
-2. How additional namespacing is done by putting some jobs under a nested module and (optionally, by convention) putting them inside a subfolder - see the jobs folder.
+2. How additional namespacing is done by putting some jobs under a nested module and \(optionally, by convention\) putting them inside a subfolder - see the jobs folder.
 
 ## Code
 
@@ -56,7 +55,7 @@ end
 
 ## Commands to Try
 
-```shell
+```text
 cd examples/files/namespaces
 
 # Run the namespaced job that is found in the root namespace `Jobs`

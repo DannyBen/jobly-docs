@@ -21,7 +21,7 @@ end
 
 ## Commands to Try
 
-```shell
+```text
 cd examples/files/basic
 
 # Run the job locally and immediately
