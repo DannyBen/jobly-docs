@@ -1,6 +1,19 @@
 # Basic Example
 
-[Download the examples folder](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/DannyBen/jobly/tree/master/examples) and follow the steps below.
+{% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
+
+## Code
+
+```ruby
+class Hello < Jobly::Job
+  def execute(name: 'bob')
+    puts "Hello #{name}"
+    logger.info "said hello to #{name}"
+  end
+end
+```
+
+## Commands to Try
 
 ```text
 cd examples/01-minimal
