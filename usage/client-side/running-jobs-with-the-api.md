@@ -93,19 +93,35 @@ Any parameter required by the job
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Job received and sent to queue.
 {% endapi-method-response-example-description %}
 
 ```
+{
+  "status":"received",
+  "job":"Build",
+  "params": {
+    "deploy":"no"
+  }
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+Job cannot be found.
+{% endapi-method-response-example-description %}
+
+```
+{
+  "status": "error",
+  "message": "No such job",
+  "job": "BuildAndRun",
+  "params": {}
+}
 
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-```text
-$ curl -XPOST localhost:3000/do/Build -d deploy=yes
-{"status":"received","job":"Build","params":{"deploy":"yes"}}
-```
-
