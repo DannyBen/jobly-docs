@@ -1,4 +1,4 @@
-# Server
+# Dashboard and API Server
 
 To start the server run `jobly server` and open [http://localhost:3000/](http://localhost:3000/) in your browser.
 
