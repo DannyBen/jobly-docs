@@ -11,7 +11,7 @@ The configuration file can be used to:
 Tip: The worker configuration file is in fact a [sidekiq configuration file](https://github.com/mperham/sidekiq/wiki/Advanced-Options). Refer to the sidekiq documentation if you need more advanced options.
 {% endhint %}
 
-### Sample Configuration File
+## Sample Worker Configuration File
 
 {% code-tabs %}
 {% code-tabs-item title="config/my-worker.yml" %}
@@ -22,7 +22,6 @@ Tip: The worker configuration file is in fact a [sidekiq configuration file](htt
 - critical
 - default
 - mundane
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -33,9 +32,7 @@ Place your YAML config file inside the config folder, and use the `jobly worker 
 Note: The filename specified with the `--config` flag must be placed inside the config folder. You do not need to specify the folder name or the `.yml` extension.
 {% endhint %}
 
-### Related Topics
+## Related Topics
 
 {% page-ref page="../examples/worker-config.md" %}
-
-
 
