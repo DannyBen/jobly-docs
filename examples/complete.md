@@ -128,7 +128,7 @@ end
 
 ## Commands to Try
 
-```text
+```bash
 cd examples/files/complete
 
 # Install additional gem dependencies
