@@ -1,7 +1,3 @@
----
-description: Configure the worker.
----
-
 # Worker Configuration
 
 The worker options can be configured by command line options or by specifying a worker configuration file when running it.
@@ -34,7 +30,7 @@ Tip: The worker configuration file is in fact a [sidekiq configuration file](htt
 Place your YAML config file inside the config folder, and use the `jobly worker --config my-worker` to use it.
 
 {% hint style="warning" %}
-Note: The filename specified with the `--config` flag must be placed inside the config folder. You do not need to specify the folder or the `.yml` extension.
+Note: The filename specified with the `--config` flag must be placed inside the config folder. You do not need to specify the folder name or the `.yml` extension.
 {% endhint %}
 
 ### Related Topics
