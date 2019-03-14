@@ -5,6 +5,7 @@
 ## Code
 
 ```ruby
+# jobs/hello.rb
 class Hello < Jobly::Job
   def execute(name: 'bob')
     puts "Hello #{name}"
@@ -16,7 +17,7 @@ end
 ## Commands to Try
 
 ```text
-cd examples/01-minimal
+cd examples/files/basic
 
 # Run the job locally and immediately
 jobly run Hello
