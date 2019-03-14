@@ -23,7 +23,7 @@ end
 
 ## Commands to Try
 
-```text
+```bash
 cd examples/files/basic
 
 # Run the job locally and immediately

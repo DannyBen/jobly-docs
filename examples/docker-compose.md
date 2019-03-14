@@ -56,7 +56,7 @@ services:
 
 ## Commands to Try
 
-```text
+```bash
 cd examples/files/docker-compose
 
 # Build the images

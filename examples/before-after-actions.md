@@ -59,7 +59,7 @@ end
 
 ## Commands to Try
 
-```text
+```bash
 cd examples/files/before-after-actions
 
 # Run the job in its successful form

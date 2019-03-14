@@ -32,7 +32,7 @@ end
 
 ## Commands to Try
 
-```text
+```bash
 cd examples/files/options-and-errors
 
 # Start the server and the worker

@@ -64,7 +64,7 @@ end
 
 ## Commands to Try
 
-```text
+```bash
 cd examples/files/job-in-job
 
 # Start the server and worker

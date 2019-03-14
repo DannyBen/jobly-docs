@@ -55,7 +55,7 @@ end
 
 ## Commands to Try
 
-```text
+```bash
 cd examples/files/namespaces
 
 # Run the namespaced job that is found in the root namespace `Jobs`

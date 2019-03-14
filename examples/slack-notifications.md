@@ -46,7 +46,7 @@ end
 
 ## Commands to Try
 
-```text
+```bash
 cd examples/files/slack-notifications
 
 # Install additional gem dependencies

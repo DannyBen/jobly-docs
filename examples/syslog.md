@@ -44,7 +44,7 @@ end
 
 ## Commands to Try
 
-```text
+```bash
 cd examples/files/syslog
 
 # Install additional gem dependencies

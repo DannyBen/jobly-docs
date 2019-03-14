@@ -55,7 +55,7 @@ worker: jobly worker --config worker
 
 ## Commands to Try
 
-```text
+```bash
 cd examples/files/worker-config
 
 # Start the server and worker
