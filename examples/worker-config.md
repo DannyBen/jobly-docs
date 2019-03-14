@@ -1,4 +1,4 @@
-# Worker Config
+# Worker Config Example
 
 {% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
 

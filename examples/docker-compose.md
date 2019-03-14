@@ -1,4 +1,4 @@
-# Docker Compose
+# Docker Compose Example
 
 {% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
 

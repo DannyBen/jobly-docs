@@ -4,5 +4,9 @@ For advanced configuration of the sidekiq worker, beyond what the `jobly worker`
 
 These files are simply [sidekiq configuration files](https://github.com/mperham/sidekiq/wiki/Advanced-Options).
 
-See the [worker-config](https://github.com/DannyBen/jobly-docs/tree/3064beae6ab00055841f8b33b7631dcf0694993a/examples/06-worker-config/README.md) example for more information.
+### Related Topics
+
+{% page-ref page="../examples/worker-config.md" %}
+
+
 
