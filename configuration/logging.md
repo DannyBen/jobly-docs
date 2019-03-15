@@ -19,7 +19,6 @@ Jobly.configure do |config|
   config.logger = Logger.new '/var/log/jobly.log'
   config.logger.level = Logger::WARN
 end
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
