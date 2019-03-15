@@ -32,7 +32,5 @@ Place your YAML config file inside the config folder, and use the `jobly worker 
 Note: The filename specified with the `--config` flag must be placed inside the config folder. You do not need to specify the folder name or the `.yml` extension.
 {% endhint %}
 
-## Related Topics
-
 {% page-ref page="../examples/worker-config.md" %}
 

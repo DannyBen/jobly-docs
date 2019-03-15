@@ -15,7 +15,5 @@ This dashboard is available at the root of the web server. It is a sidekiq web d
 
 This is a simple web API server that allows you to execute jobs remotely by calling `/do/JobName?param=value`.
 
-### Related Topics
-
 {% page-ref page="../client-side/running-jobs-with-the-api.md" %}
 

@@ -14,8 +14,6 @@ class Hello < Jobly::Job
 end
 ```
 
-### Related Topics
-
 {% page-ref page="../configuration/" %}
 
 {% page-ref page="loading-additional-code.md" %}

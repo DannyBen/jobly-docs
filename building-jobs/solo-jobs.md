@@ -16,6 +16,8 @@ Solo Jobs \(also known as Unique Jobs\) will register a lock key in redis before
 
 When a job is skipped due to locking, it will execute the `on_skip` callback.
 
+{% page-ref page="callbacks.md" %}
+
 ## Job Fingerprint
 
 By default, the job's fingerprint is built of its class name and its parameters. You can specify a different fingerprint in one of two ways:
@@ -73,11 +75,8 @@ end
 You can use `seconds`, `minutes`, `hours` and `days`.
 
 {% hint style="warning" %}
-Note: Expiration timer starts to count down from the moment the job is queued, and _not_ from the moment it is executed. 
+Note: Expiration timer starts to count down from the moment the job is queued, and _not_ from the moment it is executed.
 {% endhint %}
 
+{% page-ref page="../examples/solo.md" %}
 
-## Related Topics
-
-- Callbacks
-- Solo Example
