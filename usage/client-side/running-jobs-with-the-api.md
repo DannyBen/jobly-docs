@@ -36,10 +36,10 @@ Any parameter required by the job
 Job received and sent to queue.
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 {
-  "status":"received",
-  "job":"Build",
+  "status": "received",
+  "job": "Build",
   "params": {
     "deploy":"no"
   }
@@ -52,7 +52,7 @@ Job received and sent to queue.
 Job cannot be found.
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 {
   "status": "error",
   "message": "No such job",
@@ -95,10 +95,10 @@ Any parameter required by the job
 Job received and sent to queue.
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 {
-  "status":"received",
-  "job":"Build",
+  "status": "received",
+  "job": "Build",
   "params": {
     "deploy":"no"
   }
@@ -111,7 +111,7 @@ Job received and sent to queue.
 Job cannot be found.
 {% endapi-method-response-example-description %}
 
-```text
+```javascript
 {
   "status": "error",
   "message": "No such job",

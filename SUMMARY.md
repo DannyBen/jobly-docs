@@ -25,6 +25,7 @@
   * [The Job Class](building-jobs/the-job-class.md)
   * [Job Options](building-jobs/job-options.md)
   * [Job Callbacks](building-jobs/callbacks.md)
+  * [Reporting Job Progress](building-jobs/reporting-job-progress.md)
   * [Solo Jobs](building-jobs/solo-jobs.md)
   * [Loading Additional Code](building-jobs/loading-additional-code.md)
 * [Configuration](configuration/README.md)

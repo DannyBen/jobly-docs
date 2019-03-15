@@ -17,3 +17,4 @@ class Hello < Jobly::Job
   end
 end
 ```
+

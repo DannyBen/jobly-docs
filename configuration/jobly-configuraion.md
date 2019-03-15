@@ -5,7 +5,7 @@ Configuring Jobly can be done by one of two methods:
 1. Setting environment variables.
 2. Adding a `config/jobly.rb` to your jobs workspace.
 
-### Sample Jobly Configuration File
+## Sample Jobly Configuration File
 
 {% code-tabs %}
 {% code-tabs-item title="config/jobly.rb" %}
@@ -69,9 +69,9 @@ Jobly.configure do |config|
   config.logger = Logger.new 'jobly.log'
 
 end
-
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
 {% page-ref page="../examples/complete.md" %}
+
