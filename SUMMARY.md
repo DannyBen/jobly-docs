@@ -31,4 +31,5 @@
 * [Configuration](configuration/README.md)
   * [Jobly Configuraion](configuration/jobly-configuraion.md)
   * [Worker Configuration](configuration/worker-config.md)
+  * [Logging](configuration/logging.md)
 
