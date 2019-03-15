@@ -74,7 +74,4 @@ end
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-### Related Topics
-
 {% page-ref page="../examples/complete.md" %}
-
