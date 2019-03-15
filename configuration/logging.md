@@ -10,7 +10,7 @@ class Hello < Jobly::Job
 end
 ```
 
-By default, output is sent to `STDOUT`but you can provide your own logger and log to a file or to syslog by using the `config.logger` option in `./config/jobly.rb`
+By default, output is sent to `STDOUT` but you can provide your own logger and log to a file or to syslog by using the `config.logger` option in `./config/jobly.rb`
 
 {% code-tabs %}
 {% code-tabs-item title="config/jobly.rb" %}

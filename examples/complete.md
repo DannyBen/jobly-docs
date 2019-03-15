@@ -101,9 +101,20 @@ Jobly.configure do |config|
   # Default: ENV['JOBLY_JOBS_NAMESPACE'] || nil
   config.jobs_namespace = nil
 
-  # logger: logger instance
+  # log: string
   # Sets the logger that will be used by the servers and worker. This logger
   # is also available to your jobs with the `logger` method.
+  # This can be one of these strings:
+  # - stdout
+  # - syslog://system:program@host:port
+  # - filename
+  # Default: nil (no logging)
+  config.log = 'jobly.log'
+
+  # logger: logger instance
+  # You should normally use the `config.log` option instead.
+  # The `config.logger` option is here in case you want to bring your own 
+  # logger. 
   # Default: nil (output to STDOUT)
   config.logger = Logger.new 'jobly.log'
 
