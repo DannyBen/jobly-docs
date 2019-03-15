@@ -57,7 +57,7 @@ Jobly.configure do |config|
   # - stdout
   # - syslog://system:program@host:port
   # - filename
-  # Default: nil (no logging)
+  # Default: nil (log to STDOUT)
   config.log = 'jobly.log'
 
   # logger: logger instance
