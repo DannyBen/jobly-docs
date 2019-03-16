@@ -50,7 +50,5 @@ Omitting any of the options will fall back to a sensible default.
 
 ### Bring your own logger
 
-If you wish to use a custom logger, use the `config.logger` option instead of the 
-
-`config.log` shortcut option.
+If you wish to use a custom logger, use the `config.logger` option instead of the `config.log` shortcut option.
 
