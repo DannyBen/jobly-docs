@@ -1,4 +1,4 @@
-# Running jobs with the CLI
+# Running Jobs with the CLI
 
 There are three ways to run a job from the command line:
 

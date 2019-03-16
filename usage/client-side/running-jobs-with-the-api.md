@@ -1,4 +1,4 @@
-# Running jobs with the API
+# Running Jobs with the API
 
 The API supports running jobs either by GET or by POST in the following URL structure:
 

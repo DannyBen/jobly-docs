@@ -10,6 +10,28 @@ This example demonstrates how to ensure only one instance of the job is executed
 
 ## Code
 
+{% code-tabs %}
+{% code-tabs-item title="jobs/solo.rb" %}
+```ruby
+class Solo < Jobly::Job
+  solo
+
+  on_skip do
+    at 70, "Skipped"
+    logger.info "Job was skipped"
+  end
+
+  def execute(name: 'bob')
+    total 100
+    at 10, "Initializing"
+    sleep 20
+    at 100, "Done"
+  end
+end
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 ## Commands to Try
 
 Before running these commands, it is recommended you open the Statuses tab in the web dashboard.

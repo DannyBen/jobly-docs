@@ -1,5 +1,7 @@
 # Logging
 
+### Logging from within jobs
+
 All your code in the `./jobs` and `./app` folders have access to a standard Ruby logger.
 
 ```ruby
@@ -9,6 +11,8 @@ class Hello < Jobly::Job
   end
 end
 ```
+
+### Configuring the logger
 
 By default, output is sent to `STDOUT` but you can provide your own logger and log to a file or to syslog by using the `config.log` or the `config.logger` option in `./config/jobly.rb`
 
@@ -34,7 +38,7 @@ The `config.log` option controls how logging is handled.
 3. Setting it to a filename, will log to a file.
 4. Setting it to a syslog connection string will log to a remote syslog server. 
 
-### Logging to Syslog
+### Logging to syslog
 
 Set `config.log` to a syslog connection string in the following format:
 
@@ -44,7 +48,7 @@ Omitting any of the options will fall back to a sensible default.
 
 {% page-ref page="../examples/syslog.md" %}
 
-### Bring Your Own Logger
+### Bring your own logger
 
 If you wish to use a custom logger, use the `config.logger` option instead of the 
 
