@@ -78,5 +78,5 @@ You can use `seconds`, `minutes`, `hours` and `days`.
 Note: Expiration timer starts to count down from the moment the job is queued, and _not_ from the moment it is executed.
 {% endhint %}
 
-{% page-ref page="../examples/solo.md" %}
+{% page-ref page="../examples/solo-example.md" %}
 
