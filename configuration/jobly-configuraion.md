@@ -91,6 +91,10 @@ Jobly.configure do |config|
   # logger. 
   # Default: nil (log to STDOUT)
   config.logger = Logger.new 'jobly.log'
+  
+  # mounts: hash
+  # Mount additional rack apps to the web server.
+  config.mounts = { "/my" => MyApp }
 
 end
 ```
