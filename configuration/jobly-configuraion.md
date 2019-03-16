@@ -5,22 +5,20 @@ Configuring Jobly can be done by one of two methods:
 1. Setting environment variables.
 2. Adding a `config/jobly.rb` to your jobs workspace.
 
-### Quick Reference
+### Environment Variable Reference
 
-| Option | Environment Variable | Default |
-| :--- | :--- | :--- |
-| `environment` | `JOBLY_ENVIRONMENT` | `development` |
-| `api_url` | `JOBLY_API_URL` | `http://localhost:3000/do` |
-| `app_path` | `JOBLY_APP_PATH` | `app` |
-| `config_path` | `JOBLY_CONFIG_PATH` | `config` |
-| `redis_url` | `JOBLY_REDIS_URL` | `redis://localhost:6379/0` |
-| `status_expiration` | `JOBLY_STATUS_EXPIRATION` | `30` |
-| `jobs_namespace` | `JOBLY_JOBS_NAMESPACE` | empty |
-| `log` | `JOBLY_LOG` | empty |
-| `logger` | N/A | empty |
+| Environment Variable | Default |
+| :--- | :--- |
+| `JOBLY_ENVIRONMENT` | `development` |
+| `JOBLY_API_URL` | `http://localhost:3000/do` |
+| `JOBLY_APP_PATH` | `app` |
+| `JOBLY_CONFIG_PATH` | `config` |
+| `JOBLY_REDIS_URL` | `redis://localhost:6379/0` |
+| `JOBLY_STATUS_EXPIRATION` | `30` |
+| `JOBLY_JOBS_NAMESPACE` | unset |
+| `JOBLY_LOG` | unset |
 
-
-## Sample Jobly Configuration File
+## Jobly Configuration File
 
 {% code-tabs %}
 {% code-tabs-item title="config/jobly.rb" %}
