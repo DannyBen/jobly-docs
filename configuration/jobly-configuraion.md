@@ -10,6 +10,15 @@ Configuring Jobly can be done by one of two methods:
 | Option | Environment Variable | Default |
 | :--- | :--- | :--- |
 | `environment` | `JOBLY_ENVIRONMENT` | `development` |
+| `api_url` | `JOBLY_API_URL` | `http://localhost:3000/do` |
+| `app_path` | `JOBLY_APP_PATH` | `app` |
+| `config_path` | `JOBLY_CONFIG_PATH` | `config` |
+| `redis_url` | `JOBLY_REDIS_URL` | `redis://localhost:6379/0` |
+| `status_expiration` | `JOBLY_STATUS_EXPIRATION` | `30` |
+| `jobs_namespace` | `JOBLY_JOBS_NAMESPACE` | empty |
+| `log` | `JOBLY_LOG` | empty |
+| `logger` | N/A | empty |
+
 
 ## Sample Jobly Configuration File
 
@@ -75,7 +84,7 @@ Jobly.configure do |config|
   # - stdout
   # - syslog://system:program@host:port
   # - filename
-  # Default: nil (log to STDOUT)
+  # Default: ENV['JOBLY_LOG'] || nil (log to STDOUT)
   config.log = 'jobly.log'
 
   # logger: logger instance
