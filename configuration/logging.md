@@ -46,7 +46,7 @@ Set `config.log` to a syslog connection string in the following format:
 
 Omitting any of the options will fall back to a sensible default.
 
-{% page-ref page="../examples/syslog.md" %}
+{% page-ref page="../examples/syslog-example.md" %}
 
 ### Bring your own logger
 

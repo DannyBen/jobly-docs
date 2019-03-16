@@ -18,7 +18,7 @@
   * [Namespaces Example](examples/namespaces.md)
   * [Options and Errors Example](examples/options-and-errors.md)
   * [Slack Notifications Example](examples/slack-notifications.md)
-  * [Syslog Example](examples/syslog.md)
+  * [Syslog Example](examples/syslog-example.md)
   * [Worker Config Example](examples/worker-config.md)
   * [Solo Job Example](examples/solo.md)
   * [Custom Rack Mount](examples/custom-rack-mount.md)
