@@ -17,6 +17,7 @@ Configuring Jobly can be done by one of two methods:
 | `JOBLY_STATUS_EXPIRATION` | `30` |
 | `JOBLY_JOBS_NAMESPACE` | unset |
 | `JOBLY_LOG` | unset |
+| `JOBLY_AUTH` | unset |
 
 ## Jobly Configuration File
 
@@ -95,6 +96,10 @@ Jobly.configure do |config|
   # mounts: hash
   # Mount additional rack apps to the web server.
   config.mounts = { "/my" => MyApp }
+  
+  # auth: user:password string
+  # Set basic authentication for the server and client.
+  config.auth = "admin:secret"
 
 end
 ```
