@@ -21,6 +21,7 @@
   * [Syslog Example](examples/syslog.md)
   * [Worker Config Example](examples/worker-config.md)
   * [Solo Job Example](examples/solo.md)
+  * [Custom Rack Mount](examples/custom-rack-mount.md)
 * [Building Jobs](building-jobs/README.md)
   * [The Job Class](building-jobs/the-job-class.md)
   * [Job Options](building-jobs/job-options.md)
