@@ -4,13 +4,18 @@
 
 All your code in the `./jobs` and `./app` folders have access to a standard Ruby logger.
 
+{% code-tabs %}
+{% code-tabs-item title="jobs/hello.rb" %}
 ```ruby
 class Hello < Jobly::Job
-  def execute(name: 'bob')
+  def execut
+e(name: 'bob')
     logger.info "said hello to #{name}"
   end
 end
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ### Configuring the logger
 
