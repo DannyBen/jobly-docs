@@ -48,6 +48,34 @@ Omitting any of the options will fall back to a sensible default.
 
 {% page-ref page="../examples/syslog-example.md" %}
 
+### Separate log files for each job class
+
+If  `Jobly.log` contains `%s` in the file path, it will be replaced with the slug of the job, and will create separate log files for each job class.
+
+{% code-tabs %}
+{% code-tabs-item title="config/jobly.rb" %}
+```ruby
+Jobly.configure do |config|
+  config.log = 'logs/%s.log'
+end
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+### Automatic syslog tagging
+
+The same `%s` replacement principle applies when using a syslog connection string. This is intended to allow tagging of syslog messages with the job name.
+
+{% code-tabs %}
+{% code-tabs-item title="config/jobly.rb" %}
+```ruby
+Jobly.configure do |config|
+  config.log = 'syslog://jobserver:%s/localhost:514'
+end
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 ### Bring your own logger
 
 If you wish to use a custom logger, use the `config.logger` option instead of the `config.log` shortcut option.
