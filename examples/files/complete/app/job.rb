@@ -1,9 +1,22 @@
-require 'tty-command'
+require "slack-notifier"
 
 class Job < Jobly::Job
-  # Provide a common way for the inheriting jobs to run shell commands
-  # and send output to the common logger.
-  def shell
-    @shell ||= TTY::Command.new(output: logger, color: false)
+  # Common job configuration
+  retries 1
+  backtrace 10
+
+  # Common job functionality, like sending slack messages
+  # For this to work you need to set your slack webhook in the environment
+  # variable SLACK_WEBHOOK
+  def slack(message, channel: '#debug', user: 'Jobly')
+    notifier = Slack::Notifier.new webhook, channel: channel, username: user
+    notifier.ping message
   end
+
+protected
+
+  def webhook
+    ENV['SLACK_WEBHOOK']
+  end
+
 end
