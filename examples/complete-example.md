@@ -21,27 +21,30 @@ This example illustrates these aspects of Jobly:
 {% code-tabs-item title="jobs/build.rb" %}
 ```ruby
 class Build < Job
-  def execute(app: 'server', deploy: 'yes')
+  def execute(app: 'server', deploy: true)
     # Define how many steps this job has, for the progress bar in the 
     # Statuses tab
     total 3
 
     # Specify that we are at step 0, with a message for the progress bar.
     at 0, "Building"
+    slack "Building `#{app}`"
 
     # Simulate a long running command with output to the logger.
-    shell.run 'ls -la ; sleep 10'
-
+    run 'ls -la ; sleep 10'
+    
     # Simulate some more long running commands
-    if deploy == 'yes'
+    if deploy
       at 1, "Deploying"
+      slack "Deploying `#{app}`"
       sleep 10
     end
 
     at 2, "Verifying"
     sleep 10
 
-    at 3, "Deployed"
+    at 3, "Completed"
+    slack "Completed `#{app}`"
   end
 end
 ```
@@ -66,14 +69,27 @@ end
 
 {% code-tabs-item title="app/job.rb" %}
 ```ruby
-require 'tty-command'
+require "slack-notifier"
 
 class Job < Jobly::Job
-  # Provide a common way for the inheriting jobs to run shell commands
-  # and send output to the common logger.
-  def shell
-    @shell ||= TTY::Command.new(output: logger, color: false)
+  # Common job configuration
+  retries 1
+  backtrace 10
+
+  # Common job functionality, like sending slack messages
+  # For this to work you need to set your slack webhook in the environment
+  # variable SLACK_WEBHOOK
+  def slack(message, channel: '#debug', user: 'Jobly')
+    notifier = Slack::Notifier.new webhook, channel: channel, username: user
+    notifier.ping message
   end
+
+protected
+
+  def webhook
+    ENV['SLACK_WEBHOOK']
+  end
+
 end
 ```
 {% endcode-tabs-item %}
