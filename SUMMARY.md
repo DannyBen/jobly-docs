@@ -24,6 +24,7 @@
   * [Custom Rack Mount](examples/custom-rack-mount-example.md)
   * [Basic Auth Example](examples/basic-auth-example.md)
 * [Building Jobs](building-jobs/README.md)
+  * [Scaffolding](building-jobs/scaffolding.md)
   * [The Job Class](building-jobs/the-job-class.md)
   * [Job Options](building-jobs/job-options.md)
   * [Job Callbacks](building-jobs/callbacks.md)
