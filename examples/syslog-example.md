@@ -1,11 +1,5 @@
 # Syslog Example
 
-{% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
-
-{% hint style="info" %}
-[View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/syslog)
-{% endhint %}
-
 This example illustrates how to configure Jobly to send all logger events to a local or remote syslog.
 
 ### Enabling syslog UDP connection
