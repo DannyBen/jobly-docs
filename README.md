@@ -11,6 +11,9 @@ Jobly is a sidekiq-based job server with a command line interface, web API and a
 * **Command line interface** - for starting the server, starting the worker, and for running jobs.
 * **Web API** - for executing jobs.
 * **Web Dashboard** - including job progress and status.
+* **Remote Syslog Support** - send output to Papertrail or remote syslog.
+* **Slack Notifications** - report job progress to Slack.
+
 
 ### Interactive Demo
 
