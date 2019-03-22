@@ -18,7 +18,7 @@ end
 ## Commands to Try
 
 ```bash
-cd examples/files/basic
+cd examples/basic
 
 # Run the job locally and immediately
 jobly run Hello

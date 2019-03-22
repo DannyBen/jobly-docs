@@ -3,7 +3,7 @@
 ### Commands to Try
 
 ```bash
-cd examples/files/basic
+cd examples/basic
 
 # Start the server with basic auth enabled
 JOBLY_AUTH=user:pass jobly server

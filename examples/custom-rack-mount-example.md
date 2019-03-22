@@ -37,7 +37,7 @@ end
 ## Commands to Try
 
 ```bash
-cd examples/files/custom-rack-mount
+cd examples/custom-rack-mount
 
 # Start the server
 jobly server

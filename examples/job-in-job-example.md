@@ -61,7 +61,7 @@ end
 ## Commands to Try
 
 ```bash
-cd examples/files/job-in-job
+cd examples/job-in-job
 
 # Start the server and worker
 foreman start

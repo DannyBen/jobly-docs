@@ -52,7 +52,7 @@ end
 ## Commands to Try
 
 ```bash
-cd examples/files/namespaces
+cd examples/namespaces
 
 # Run the namespaced job that is found in the root namespace `Jobs`
 jobly run Hello

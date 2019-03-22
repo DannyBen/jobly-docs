@@ -58,7 +58,7 @@ worker: jobly worker --config worker
 ## Commands to Try
 
 ```bash
-cd examples/files/worker-config
+cd examples/worker-config
 
 # Start the server and worker
 # Note that the `Procfile` is defined to run `jobly worker --config worker`

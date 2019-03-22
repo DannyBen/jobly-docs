@@ -29,7 +29,7 @@ end
 ## Commands to Try
 
 ```bash
-cd examples/files/options-and-errors
+cd examples/options-and-errors
 
 # Start the server and the worker
 foreman start

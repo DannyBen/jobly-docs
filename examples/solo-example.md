@@ -37,7 +37,7 @@ end
 Before running these commands, it is recommended you open the Statuses tab in the web dashboard.
 
 ```bash
-cd examples/files/solo
+cd examples/solo
 
 # Start the server and worker
 foreman start

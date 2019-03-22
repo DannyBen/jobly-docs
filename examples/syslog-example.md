@@ -48,7 +48,7 @@ end
 ## Commands to Try
 
 ```bash
-cd examples/files/syslog
+cd examples/syslog
 
 # Install additional gem dependencies
 bundle install

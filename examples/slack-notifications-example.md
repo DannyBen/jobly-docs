@@ -27,7 +27,7 @@ end
 ## Commands to Try
 
 ```bash
-cd examples/files/slack-notifications
+cd examples/slack-notifications
 
 # Set your slack webhook in an environment variable
 export JOBLY_SLACK_WEBHOOK=https://hooks.slack.com/services/...

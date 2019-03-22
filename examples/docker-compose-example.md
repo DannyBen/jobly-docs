@@ -53,7 +53,7 @@ services:
 ## Commands to Try
 
 ```bash
-cd examples/files/docker-compose
+cd examples/docker-compose
 
 # Build the images
 docker-compose build

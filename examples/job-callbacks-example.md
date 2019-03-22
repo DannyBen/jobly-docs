@@ -56,7 +56,7 @@ end
 ## Commands to Try
 
 ```bash
-cd examples/files/before-after-actions
+cd examples/before-after-actions
 
 # Run the job in its successful form
 jobly run Actions
