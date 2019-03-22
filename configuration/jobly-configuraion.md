@@ -17,6 +17,9 @@ Configuring Jobly can be done by one of two methods:
 | `JOBLY_STATUS_EXPIRATION` | `30` |
 | `JOBLY_JOBS_NAMESPACE` | unset |
 | `JOBLY_LOG` | unset |
+| `JOBLY_SLACK_WEBHOOK` | unset |
+| `JOBLY_SLACK_CHANNEL` | `#general` |
+| `JOBLY_SLACK_USER` | `Jobly` |
 | `JOBLY_AUTH` | unset |
 
 ## Jobly Configuration File
@@ -92,6 +95,24 @@ Jobly.configure do |config|
   # logger. 
   # Default: nil (log to STDOUT)
   config.logger = Logger.new 'jobly.log'
+  
+  # slack_webhook: url
+  # To use the built in slack notifier, set this slack
+  # webhook.
+  # Default: ENV['JOBLY_SLACK_WEBHOOK']
+  config.slack_webhook = "https://hooks.slack.com/..."
+  
+  # slack_channel: string
+  # Sets the default slack channel.
+  # This can be overwritten on a per-job basis.
+  # Default: ENV['JOBLY_SLACK_CHANNEL'] || '#general'
+  config.slack_channel = '#debug'
+  
+  # slack_user: string
+  # Sets the default slack user name to display.
+  # This can be overwritten on a per-job basis.
+  # Default: ENV['JOBLY_SLACK_USER'] || 'Jobly'
+  config.slack_user = 'Botly'
   
   # mounts: hash
   # Mount additional rack apps to the web server.
