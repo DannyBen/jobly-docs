@@ -106,5 +106,3 @@ end
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-{% page-ref page="../examples/complete-example.md" %}
-
