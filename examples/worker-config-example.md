@@ -1,11 +1,5 @@
 # Worker Config Example
 
-{% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
-
-{% hint style="info" %}
-[View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/worker-config)
-{% endhint %}
-
 This example makes use of worker configuration file in order to tell the worker to process two queues \(`critical` and `mundane`\) instead of the `default` queue.
 
 Note that the same can also be achieved through the command line, without using a config file.

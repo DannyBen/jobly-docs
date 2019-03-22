@@ -1,11 +1,5 @@
 # Solo Job Example
 
-{% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
-
-{% hint style="info" %}
-[View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/solo)
-{% endhint %}
-
 This example demonstrates how to ensure only one instance of the job is executed at any given time.
 
 ## Code
