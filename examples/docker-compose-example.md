@@ -48,6 +48,18 @@ services:
     command: Hello
 ```
 {% endcode-tabs-item %}
+
+{% code-tabs-item title="app/jobs/hello.rb" %}
+```ruby
+
+class Hello < Jobly::Job
+  def execute(name: 'bob')
+    puts "Hello #{name}"
+    logger.info "said hello to #{name}"
+  end
+end
+```
+{% endcode-tabs-item %}
 {% endcode-tabs %}
 
 ## Commands to Try

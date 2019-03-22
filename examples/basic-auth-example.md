@@ -1,6 +1,6 @@
 # Basic Auth Example
 
-### Commands to Try
+## Commands to Try
 
 ```bash
 cd examples/basic
