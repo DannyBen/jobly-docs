@@ -7,7 +7,7 @@ This example illustrates how to send slack notifications from your jobs. Note th
 {% code-tabs %}
 {% code-tabs-item title="jobs/greet.rb" %}
 ```ruby
-class Greet < Job
+class Greet < Jobly::Job
   # Optional settings (defaults to #general and Jobly)
   slack_channel '#debug'
   slack_user 'Greeter'
