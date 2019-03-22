@@ -1,11 +1,5 @@
 # Job in Job Example
 
-{% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
-
-{% hint style="info" %}
-[View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/job-in-job)
-{% endhint %}
-
 This example demonstrates how to call a job from inside another job.
 
 Two approaches are possible:

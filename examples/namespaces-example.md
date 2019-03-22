@@ -1,11 +1,5 @@
 # Namespaces Example
 
-{% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
-
-{% hint style="info" %}
-[View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/namespaces)
-{% endhint %}
-
 This example illustrates how to define jobs that are namespaced in modules.
 
 It illustrates:

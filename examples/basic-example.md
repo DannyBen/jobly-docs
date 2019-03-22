@@ -1,11 +1,5 @@
 # Basic Example
 
-{% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
-
-{% hint style="info" %}
-[View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/blob/master/examples/files/basic/jobs/hello.rb)
-{% endhint %}
-
 ## Code
 
 {% code-tabs %}

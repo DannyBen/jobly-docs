@@ -1,11 +1,5 @@
 # Docker Compose Example
 
-{% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
-
-{% hint style="info" %}
-[View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/docker-compose)
-{% endhint %}
-
 This example demonstrates how to use Jobly inside a docker container and with docker compose.
 
 ## Code

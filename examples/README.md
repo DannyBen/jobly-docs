@@ -1,6 +1,8 @@
 # Examples
 
-{% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
+{% hint style="info" %}
+These examples are [available on GitHub](https://github.com/DannyBen/jobly-examples).
+{% endhint %}
 
-The following examples each demonstrate a specific feature or aspect of Jobly. You can download the entire Examples Folder as a ZIP file or [view it on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files). 
+The following examples each demonstrate a specific feature or aspect of Jobly.
 

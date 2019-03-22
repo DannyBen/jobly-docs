@@ -1,11 +1,5 @@
 # Options and Errors Example
 
-{% file src="../.gitbook/assets/examples.zip" caption="Download Examples Folder" %}
-
-{% hint style="info" %}
-[View Example Code on GitHub](https://github.com/DannyBen/jobly-docs/tree/master/examples/files/options-and-errors)
-{% endhint %}
-
 This example illustrates setting the job options: `backtrace`, `queue` and `retries`.
 
 ## Code
