@@ -8,8 +8,7 @@ All your code in the `./jobs` and `./app` folders have access to a standard Ruby
 {% code-tabs-item title="jobs/hello.rb" %}
 ```ruby
 class Hello < Jobly::Job
-  def execut
-e(name: 'bob')
+  def execute(name: 'bob')
     logger.info "said hello to #{name}"
   end
 end
