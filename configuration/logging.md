@@ -74,7 +74,7 @@ The same `%s` replacement principle applies when using a syslog connection strin
 {% code-tabs-item title="config/jobly.rb" %}
 ```ruby
 Jobly.configure do |config|
-  config.log = 'syslog://jobserver:%s/localhost:514'
+  config.log = 'syslog://jobserver:%s@localhost:514'
 end
 ```
 {% endcode-tabs-item %}
