@@ -29,7 +29,7 @@ Configuring Jobly can be done by one of two methods:
 ```ruby
 Jobly.configure do |config|
   # Full configuration file. Everything is optional and has defaults.
-  # This file is loaded on boot of the server, worker and jobly CLI.
+  # This file is loaded on boot by the server, worker and jobly CLI.
   # ---
 
   # environment: development | production
@@ -79,23 +79,17 @@ Jobly.configure do |config|
   # Default: ENV['JOBLY_JOBS_NAMESPACE'] || nil
   config.jobs_namespace = nil
 
-  # log: string
+  # log: string or logger instance
   # Sets the logger that will be used by the servers and worker. This logger
   # is also available to your jobs with the `logger` method.
   # This can be one of these strings:
   # - stdout
   # - syslog://system:program@host:port
   # - filename
+  # Or your own Logger instance.
   # Default: ENV['JOBLY_LOG'] || nil (log to STDOUT)
   config.log = 'jobly.log'
 
-  # logger: logger instance
-  # You should normally use the `config.log` option instead.
-  # The `config.logger` option is here in case you want to bring your own 
-  # logger. 
-  # Default: nil (log to STDOUT)
-  config.logger = Logger.new 'jobly.log'
-  
   # slack_webhook: url
   # To use the built in slack notifier, set this slack
   # webhook.

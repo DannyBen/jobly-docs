@@ -27,7 +27,7 @@ Jobly.configure do |config|
   config.log = '/var/log/jobly.log'
   
   # same as:
-  # config.logger = Logger.new '/var/log/jobly.log'
+  # config.log = Logger.new '/var/log/jobly.log'
 
   config.logger.level = Logger::WARN
 end
@@ -82,5 +82,6 @@ end
 
 ### Bring your own logger
 
-If you wish to use a custom logger, use the `config.logger` option instead of the `config.log` shortcut option.
+The `config.log` option can also accept any `Logger` instance, in case you
+wish to provide a custom logger.
 
